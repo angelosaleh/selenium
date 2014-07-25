@@ -16,16 +16,16 @@ This client will be 192.168.1.64
 
 start the selenium java process in the client: 
 
-java -jar /home/user/selenium-server-standalone-2.39.0.jar
+	java -jar /home/user/selenium-server-standalone-2.39.0.jar
 
 PRE-REQUISITES for CI Server(CIS):
 
 CI server refers to environments that are primarily used for Continuous Ingeration processes such as Deployment.
 PHPUnit will be installed in this server.
 
-wget https://phar.phpunit.de/phpunit.phar
-chmod +x phpunit.phar
-mv phpunit.phar /usr/local/bin/phpunit
+	wget https://phar.phpunit.de/phpunit.phar
+	chmod +x phpunit.phar
+	mv phpunit.phar /usr/local/bin/phpunit
 
 PHPUnit_Selenium
 Selenium RC integration for PHPUnit.
@@ -34,6 +34,6 @@ This package is included in the PHAR distribution of PHPUnit.
 
 In the ci server run:
 
-phpunit --bootstrap bootstrap.php phpunitTest.php
+	phpunit --bootstrap bootstrap.php phpunitTest.php
 
 And you will see the test running on your client.
